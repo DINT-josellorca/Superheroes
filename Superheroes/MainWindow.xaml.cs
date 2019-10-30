@@ -32,34 +32,6 @@ namespace Superheroes
         private void EditarButton_Click(object sender, RoutedEventArgs e)
         {
             EditarStackPanel.DataContext = heroe;
-            NombreTextBox.Text = heroe.Nombre;
-            VillanoTextBox.Text = heroe.Enemigo;
-            FotoTextBox.Text = heroe.Foto;
-        }
-
-        private void NombreTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            heroe.Nombre = NombreTextBox.Text;
-        }
-
-        private void VillanoTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            heroe.Enemigo = VillanoTextBox.Text;
-        }
-
-        private void FotoTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            heroe.Foto = FotoTextBox.Text;
-        }
-
-        private void VengadorCheckBox_Checked(object sender, RoutedEventArgs e)
-        {
-            heroe.Vengador = true;
-        }
-
-        private void VengadorCheckBox_Unchecked(object sender, RoutedEventArgs e)
-        {
-            heroe.Vengador = false;
         }
     }
 }
